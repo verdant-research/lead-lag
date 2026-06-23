@@ -3,7 +3,7 @@ import sys
 from setuptools import setup, find_packages
 from Cython.Build import cythonize
 
-VERSION = '2.3.1'
+VERSION = '2.3.2'
 
 if sys.version_info[0] < 3:
     raise Exception('Must be using Python 3.')
