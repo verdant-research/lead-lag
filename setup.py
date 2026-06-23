@@ -9,7 +9,7 @@ if sys.version_info[0] < 3:
     raise Exception('Must be using Python 3.')
 
 setup(
-    name='lead-lag',
+    name='lead-lag-verdant',
     version=VERSION,
     ext_modules=cythonize("lead_lag/lead_lag_impl.pyx", language_level="3"),
     description='Lead lag estimation with a O(n log n) complexity.',
