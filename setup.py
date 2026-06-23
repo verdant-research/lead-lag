@@ -1,15 +1,9 @@
-import os
 import sys
 
 from setuptools import setup, find_packages
+from Cython.Build import cythonize
 
-VERSION = '2.3'
-
-# Cython has to be installed before. And I could not find any other ways.
-os.system('pip install cython')
-
-# noinspection PyPackageRequirements
-from Cython.Build import cythonize  # noqa: E402
+VERSION = '2.3.1'
 
 if sys.version_info[0] < 3:
     raise Exception('Must be using Python 3.')
